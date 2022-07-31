@@ -1,37 +1,14 @@
 # Official images for [itopia Spaces](https://itopiaspaces.com)
 
-[This set of open-source images](https://github.com/orgs/itopia-inc/packages?repo_name=spaces-images)
-provides opinionated software development environments (including IDEs, CLIs, settings, etc.),
-which should enable most developers to be productive in itopia Spaces
-without requiring customization (by administrators) or personalization (by developers).
+FIX WINDOWS DOCKER DESKTOP ISSUES:
 
-For information about supported Linux distributions,
-see the [base images](https://github.com/itopia-inc/spaces-base-images).
+bash: /usr/share/dev-scripts/install_OpenJDK_8_on_Ubuntu_focal.sh: /bin/bash^M: bad interpreter: No such file or directory
+The command '/bin/sh -c bash -ce '/usr/share/dev-scripts/install_OpenJDK_8_on_Ubuntu_focal.sh'' returned a non-zero code: 126
 
-## Usage
+![alt text](zdoudou.JPG)
 
-Administrators can deploy these images
-by selecting them during the space creation process
-(using the itopia Spaces
-[Admin Portal](https://spaces.itopia.com),
-[API](https://api.spaces.itopia.com),
-or [CLI](https://github.com/itopia-inc/spaces-cli)).
-<!-- TODO: Add example screenshots/commands -->
+see Example : openJDK +IDEA
 
-Alternatively, administrators can customize these images
-by using them as the base image for a custom image.
-For example:
+docker build . 
 
-<!-- TODO: Write some example RUN instructions -->
-```Dockerfile
-# syntax=docker/dockerfile:1
-FROM ghcr.io/itopia-inc/spaces-images/spaces-ubuntu-nodejs:focal-16
-
-# Install your developers' tools
-
-# Configure your developers' default environment
-```
-
-## Feedback
-
-Questions? Requests? [Please let us know on GitHub!](https://github.com/itopia-inc/spaces-images/issues)
+![alt text](bibi.JPG)
